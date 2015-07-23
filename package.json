@@ -1,0 +1,26 @@
+{
+  "name": "itunes-artist-search",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Burke Holland <burkeholland@gmail.com> (http://a.shinynew.me/)",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.15.7"
+  },
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "jquery": "github:components/jquery@^2.1.4",
+      "kendo-ui": "github:kendo-labs/bower-kendo-ui@^2015.2.720"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  }
+}

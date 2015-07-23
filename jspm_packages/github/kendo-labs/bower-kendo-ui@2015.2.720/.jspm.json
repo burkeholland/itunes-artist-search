@@ -1,0 +1,31 @@
+{
+  "jspm": {
+    "main": "src/js/kendo.ui.core",
+    "format": "global",
+    "shim": {
+      "src/js/kendo.ui.core": {
+        "deps": [
+          "jquery"
+        ],
+        "exports": "kendo"
+      }
+    },
+    "dependencies": {
+      "jquery": "github:components/jquery"
+    }
+  },
+  "main": "src/js/kendo.ui.core",
+  "format": "global",
+  "shim": {
+    "src/js/kendo.ui.core": {
+      "deps": [
+        "jquery"
+      ],
+      "exports": "kendo"
+    }
+  },
+  "registry": "github",
+  "dependencies": {
+    "jquery": "github:components/jquery"
+  }
+}

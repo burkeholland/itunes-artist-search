@@ -1,0 +1,7 @@
+<h3>History</h3>
+
+<div data-bind="source: searchHistoryDataSource" data-template="search-history-template"></div>
+
+<script id="search-history-template" type="text/x-kendo-template">
+	<p><a href="\\\#" data-bind="click: selectHistoryItem" data-id="#: artistId #">#: artistName #</a></p>
+</script>

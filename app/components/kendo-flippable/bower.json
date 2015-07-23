@@ -1,0 +1,31 @@
+{
+  "name": "kendo-flippable",
+  "version": "0.0.1",
+  "homepage": "http://burkeholland.github.com/kendo-flippable",
+  "authors": [
+    "Burke Holland <burkeholland@gmail.com>"
+  ],
+  "description": "A plugin for Kendo UI which creates a card which can be flipped from front to back",
+  "main": "kendo.flippable.min.js",
+  "keywords": [
+    "kendo-ui",
+    "kendo-ui-core",
+    "jquery"
+  ],
+  "license": "Apache2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "kendo-ui-core": "~2014.2.716"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.1.0"
+  }
+}

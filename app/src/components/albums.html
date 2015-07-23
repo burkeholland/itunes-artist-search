@@ -1,0 +1,53 @@
+<div>
+  <div class="albums" data-bind="source: albumsDataSource" data-template="albums-template">
+  </div>
+  <div class="empty" data-bind="visible: isEmpty">
+    <a href="#" data-bind="click: search"><i class="fa fa-music"></i></a>
+  </div>
+</div>
+
+
+
+
+<script type="text/x-kendo-template" id="albums-template">
+  <div class="col-sm-4">
+    <div class="album" data-role="flippable" data-bind="events: { flipStart: flipStart }">
+      <div class="front" data-role="touch" data-bind="events: { tap: flip }">
+        <div class="col-lg-5">
+          <div class="album-cover">
+            <img class="img-circle" src="#: artworkUrl100 #">
+            <p><span class="badge">#: trackCount #</span> tracks</p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="row">
+            <div class="col-xs-12">
+              <h4 title="#: collectionCensoredName #"> #: collectionCensoredName #</h4>
+            </div>
+            <div class="col-xs-12 hidden-md hidden-sm">
+              <p>Released #: kendo.toString(releaseDate, "MMM d, yyyy") #</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="back">
+        <div data-role="kendo.mobile.ui.NavBar">
+          <span data-role="kendo.mobile.ui.ViewTitle">Tracks</span>
+          <div data-role="kendo.mobile.ui.Button" data-bind="click: flip" data-align="left">Back</div>
+        </div> 
+        <div class="tracks">
+          <ul data-role="kendo.mobile.ui.ListView" data-bind="source: tracks" data-auto-bind="false" data-template="track-template"></table>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/x-kendo-template" id="track-template">
+  <i class="fa fa-play" data-bind="click: play, invisible: isPlaying">
+    <span> #: trackName #</span>
+  </i>
+  <i class="fa fa-pause" data-bind="click: stop, visible: isPlaying">
+    <span> #: trackName #</span>
+  </i>
+</script>
