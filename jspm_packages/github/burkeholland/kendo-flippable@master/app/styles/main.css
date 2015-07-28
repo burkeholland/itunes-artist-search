@@ -1,0 +1,63 @@
+body, html{
+  margin-top: 40px;
+}
+.album {
+  display: none;
+  height: 275px;
+  margin-bottom: 60px;
+}
+.front {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.title {
+  margin-left: 150;
+}
+
+.tracks {
+  height: 228px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.tracks li {
+  padding: 0;
+}
+.tracks i {
+  display: block;
+  padding: 0.7em;
+}
+
+.album-cover {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.album-cover > img {
+  height: 100px;
+  margin-bottom: 10px;
+}
+.album-img {
+  position: absolute;
+}
+.subtext {
+  font-size: 12px;
+}
+
+.header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.header > img {
+  margin: auto;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

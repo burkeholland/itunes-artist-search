@@ -1,5 +1,5 @@
 import kendo from 'kendo-ui';
-import flippable from '../components/kendo-flippable/kendo.flippable.min';
+import kendoFlippable from 'kendo-flippable';
 
 import SearchBox from './components/search-box';
 import Artist from './components/artist';

@@ -10,9 +10,14 @@ class Player extends Component {
 		
 		super(container, template);
 
-		Component.on('player/play', (e, url) => {
-			player.src = url;
+		Component.on('player/play', (e, args) => {
+
+			player.src = args.previewUrl;
 			player.play();
+			console.log(args);
+			new Notification(args.trackName, {
+				body: `${args.artistName} - ${args.collectionName}`
+			});
 		});
 
 		Component.on('player/pause', () => {

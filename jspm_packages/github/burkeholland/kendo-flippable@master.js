@@ -1,0 +1,1 @@
+module.exports = require("github:burkeholland/kendo-flippable@master/kendo.flippable.min");

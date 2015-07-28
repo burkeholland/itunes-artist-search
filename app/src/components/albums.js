@@ -81,8 +81,8 @@ var observable = kendo.observable({
 
 		resetPlayButtons();
 
-		Component.trigger('player/play', e.data.previewUrl);  
-		e.data.set('isPlaying', true);  
+		Component.trigger('player/play', e.data);  
+		e.data.set('isPlaying', true); 
 	},
 
 	stop: function(e) {

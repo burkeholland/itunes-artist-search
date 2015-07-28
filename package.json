@@ -14,6 +14,9 @@
   "jspm": {
     "directories": {},
     "dependencies": {
+      "bootstrap": "github:twbs/bootstrap@^3.3.5",
+      "burkeholland/kendo-flippable": "github:burkeholland/kendo-flippable@master",
+      "font-awesome": "npm:font-awesome@^4.3.0",
       "jquery": "github:components/jquery@^2.1.4",
       "kendo-ui": "github:kendo-labs/bower-kendo-ui@^2015.2.720"
     },
